@@ -1,0 +1,193 @@
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:
+				url(../imagens/ruido.png),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+.img1 {
+    border-radius: 50%;
+	width: 80px;
+}
+
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    top: 10%;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 420px;
+    left: 50px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card2{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    left: 40px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card3{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    left: 30px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.card:before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(50deg,#ff4169,#7c26f8);
+    transform: skewY(345deg);
+    transition: 0.5s;
+    
+}
+.card:hover::before{
+    transform: skewY(390deg);
+    top: -70%;
+}
+.card::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 7.9em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .imgBx img{
+    max-width: 80%;
+    transition: 0.5s;
+}
+.card:hover .imgBx img{
+    max-width: 70%;
+}
+.card .contentBx{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index:1;
+
+}
+.card .contentBx h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card .contentBx .price{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.card .contentBx .buy{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: #2196f3;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card:hover .contentBx .buy{
+    top: 0px;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 950px){
+    .card{
+        width: 85%;
+    }
+
+    .card1{
+        width: 85%;
+    }
+}
